@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maratona Dev</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+    }
+
+    header {
+      background-color: #161b22;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid #30363d;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #58a6ff;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #8b949e;
+    }
+
+    section.presentation {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    section.presentation h2 {
+      font-size: 2rem;
+      color: #58a6ff;
+      margin-bottom: 1rem;
+    }
+
+    section.presentation p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #c9d1d9;
+    }
+
+    .form-section {
+      background-color: #161b22;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+      border-top: 1px solid #30363d;
+    }
+
+    .form-section h2 {
+      color: #58a6ff;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    label {
+      font-weight: bold;
+      color: #c9d1d9;
+    }
+
+    input, select, textarea {
+      padding: 0.75rem;
+      border-radius: 6px;
+      border: 1px solid #30363d;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 0.75rem;
+      background-color: #238636;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #2ea043;
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      color: #8b949e;
+      padding: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section.presentation h2,
+      .form-section h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Maratona Dev 2025 🚀</h1>
+    <p>Prepare-se para a maior maratona de programação do ano</p>
+  </header>
+
+  <section class="presentation">
+    <h2>O desafio está lançado!</h2>
+    <p>
+      Participe da <strong>Maratona Dev 2025</strong> e mostre seu talento em lógica, algoritmos e criatividade. 
+      Durante 48 horas, você e seu time vão encarar desafios reais, desenvolver soluções incríveis e concorrer a prêmios.
+    </p>
+    <p>
+      Não importa se você é iniciante ou veterano. O importante é codar, aprender e se superar! 
+      Prepare seu editor de código e venha fazer parte dessa jornada épica com centenas de outros programadores.
+    </p>
+  </section>
+
+  <section class="form-section">
+    <h2>Inscreva-se agora</h2>
+    <form action="#" method="post">
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" name="idade" min="10" max="100" required />
+
+      <label for="nivel">Nível de experiência:</label>
+      <select id="nivel" name="nivel" required>
+        <option value="">Selecione...</option>
+        <option value="iniciante">Iniciante</option>
+        <option value="intermediario">Intermediário</option>
+        <option value="avancado">Avançado</option>
+      </select>
+
+      <label for="linguagem">Linguagem favorita:</label>
+      <input type="text" id="linguagem" name="linguagem" />
+
+      <label for="mensagem">Por que você quer participar?</label>
+      <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+      <button type="submit">Enviar inscrição</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Maratona Dev - Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
